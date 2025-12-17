@@ -1,0 +1,36 @@
+Q1. What is model training rate? we should choose a high learning rate for getting quick results on training data. Comment on the statement.
+Ans: The learning rate is a hyperparameter that controls how much the model’s weights are updated during training after each iteration.
+
+While a high learning rate can make training faster initially, it may cause the model to overshoot the optimal solution, leading to unstable training or divergence. A very high learning rate can also prevent the model from converging to a minimum.
+moderate learning rate is preferred to ensure stable and accurate learning.
+
+Q2. Explain one-hot encoding, does the dimensionality of the dataset increase, decrease or mains constant after applying this technique? 
+Ans: One-hot encoding is a technique used to convert categorical variables into a numerical format so that machine learning models can process them.
+In this method, each category is represented as a binary vector where only one value is 1 and the rest are 0.
+
+Q.3 A financial institution has just hired u to build a system which will decide what car insurance package to offer to different clients. The information recorded about the clients are -gender, age group (under 20, 20-35, 35-55 and over 55), credit rating, occupation, number of accidents in the last year, car make, model, year and the city where the person lives.
+
+The financial institution has a database of roughly 20000 current clients. Explain step by step how you would use a logistic regression approach to build the system.
+
+Your answer should contain:
+
+a. Type of problem you are dealing with
+
+b. How would you cater the categorical data e g. occupation, car make, model, city etc using them as features in your logistic regression model
+
+c. Other relevant details
+Ans:
+
+Q.4 Write the steps in designing an Unsupervised ML model. How do we change the penalty parameter in case we have a condition of underfiotting using regularization technique?
+
+Q.5 What should be the expected output of the following code snippet?
+
+Import numpy as np
+
+from sklearn.cluster import Kmeans
+
+x= np.array([[1, 2], [1, 4], [1, 0], [10, 2], [10, 4], [10, 0]])
+
+kmeans = KMeans(n_clusters=2)
+
+kmeans.fit(X)
